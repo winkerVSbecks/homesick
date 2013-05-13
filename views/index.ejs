@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Tiresias Tesseract</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons and app icons
+	================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body>
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- NAVBAR -->
+		<div class="sixteen columns small-bottom">
+			<div class="navbar">
+				<h1>
+					Tiresias Tesseract
+					<small class="subheader version">version 1.4</small></h1>
+					<ul>
+						<li><a href="#about">about</a></li>
+						<li><a href="/app" target="_blank">shape-builder</a></li>
+					</ul>
+			</div>
+			<hr />
+		</div>
+		<!-- END NAVBAR -->
+
+		<!-- LEAD -->
+		<div class="sixteen columns small-bottom">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi . Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+		</div>
+		<!-- END LEAD -->
+
+		<!-- HERO -->
+		<div class="hero sixteen columns add-bottom">
+			<img class="small-bottom" src="img/main.png">
+			<p>INSTALLATION | 254 metal hooks, 8 turnbuckles, silk &amp; thread | 12m x 10m x 8m | SOFTWARE | processing.js, node.js, mongodb &amp; heroku</p>
+		</div>
+		<!-- END HERO -->
+
+		<!-- ABOUT -->
+		<div id="about" class="sixteen columns add-bottom">
+			<h2>About</h2>
+			<p>Tiresias Tesseract is my graduation project at the Interactive/Media/Design department at <a target="_blank" href="http://www.kabk.nl/">The Royal Academy of Art</a>, the Hague. The STB Series is an ongoing experiment with simulated airstreams that I produce through computer programs common in scientific practices, particularly those in connection with building analysis. The works in the series hold no constant appearance, matter, or material - I am trying to find methods to catch fragments of a virtual condition in permanent flux. The STB Series reflects my investigation into how science and media are trying to approach the creation of ‘reality’ through new technological methods of simulation. While these simulations are trying to imitate reality, I am imitating the imitation of reality with my hand - the hand drawing as an essential part of this work. For me it allows a physical acquisition of invisible digital calculations, and also includes mistakes and instinctive extensions. Until a drawing is finished it passes through several stations of analog and digital realms.</p>
+		</div>
+		<!-- END ABOUT -->
+
+		<!-- THREE COLUMNS -->
+		<div class="one-third column add-bottom">
+			<h3>How It Works</h3>
+			<img class="one-third column" src="img/one.svg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante.</p>
+		</div>
+		<div class="one-third column add-bottom">
+			<h3>The Shape-Builder</h3>
+			<img class="one-third column" src="img/two.svg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante.</p>
+		</div>
+		<div class="one-third column add-bottom">
+			<h3>Theory &amp; Background</h3>
+			<img class="one-third column" src="img/three.svg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante. <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+		</div>
+		<!-- END THREE COLUMNS -->
+
+		<!-- FOOTER -->
+		<footer class="sixteen columns half-bottom">
+			<hr>
+			<span class="footerLinks">&copy; varun vachhar 2013 </span>
+			<span class="footerLinks">
+				<a target="_blank" href="http://winkervsbecks.com/">winkerVSbecks</a>
+				&nbsp; &nbsp; 
+				<a target="_blank" href="http://www.kabk.nl/pageEN.php?id=0013">I/M/D</a>
+			</span>
+		</footer>
+		<!-- END FOOTER -->
+
+	</div><!-- END CONTAINER -->
+
+
+<!-- Le Javascript
+================================================== -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="libs/modernizr.min.js"></script>
+<script type="text/javascript">
+  $(window).load(function() {
+	  $('a').click(function() {
+	    var elementClicked = $(this).attr("href");
+	    if (elementClicked.substring(0, 1) === "#") {
+		    var destination = $(elementClicked).offset().top;
+		    $("html:not(:animated),body:not(:animated)").animate(
+		    	{ 
+		    		scrollTop: destination-15
+		    	}, 500 );
+		    return false;
+		  }
+		});
+		if(!Modernizr.svg) {
+	    $('img[src*="svg"]').attr('src', function() {
+	      return $(this).attr('src').replace('.svg', '.png');
+	    });
+		}
+	});
+</script>
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22315045-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "PolygonBuilder",
+  "description": "design installation for thesis project",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "ejs": ">=0.8.3",
+    "mongoose": "2.6.x"
+  },
+  "engines": 
+  {
+  	"node": "0.10.x",
+  	"npm": "1.2.x"
+  },
+  "author": { 
+    "name" : "Varun Vachhar",
+    "email" : "varun@winkervsbecks.com",
+    "url" : "http://winkervsbecks.com/"
+  },
+  "license" : "MIT" 
+}
