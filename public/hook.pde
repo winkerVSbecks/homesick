@@ -29,7 +29,7 @@ public class Hook
 				translate(v.x,v.y,v.z);
 				box(15);
 				noFill();
-			} else {
+			} else if (isHooks) {
 				stroke(c);
 				noFill();
 				translate(v.x,v.y,v.z);

@@ -2,13 +2,13 @@
 /*************************************
   GUI
 *************************************/
-float ld = 781;
-float wd = 500;
-float hd = 384;
+float ld = 781-10;
+float wd = 500-10;
+float hd = 384-10;
 float res = 50;
 
 Hook[] hooks = new Hook[634];
-Wall[] walls =  new Wall[5];
+Wall[] walls =  new Wall[6];
 Face[] faces = new Face[0];
 Polygon[] polygons = new Polygon[0];
 Face[] loadedFaces = new Face[0];
@@ -22,6 +22,7 @@ Boolean areHidden = false;
 Boolean isWireframe = false;
 Boolean isDoorsAndWalls = false;
 Boolean isDrawPolygons = false;
+Boolean isHooks = true;
 
 
 //--------------------------------------
@@ -60,7 +61,7 @@ void setup() {
   // Window Wall
   // ---------------------
 	for (int b = res; b < wd; b+=res) {
-	  for (int c = 0; c <= hd; c+=res) {
+	  for (int c = res; c <= hd; c+=res) {
 	    hooks[i] = new Hook(new PVector(b,c,ld), #93D2E4);
 	    i++;
 	  }
@@ -142,7 +143,29 @@ void setup() {
 	window.walls.doorlessWall = {
 		'i_start': temp_i_start, 
 		'i_end': i-1 
-			};
+	};
+	temp_i_start = i;
+	// ---------------------
+  // CIELING
+  // ---------------------
+	for (int b = res; b < wd; b+=res) {
+	  for (int c = res; c < ld; c+=res) {
+	    hooks[i] = new Hook(new PVector(b,0,c), #93D2E4);
+	    i++;
+	  }
+	}
+	walls[5] = new Wall(
+		new PVector(0,0,0), 
+		new PVector(0,0,ld), 
+		new PVector(wd,0,ld), 
+		new PVector(wd,0,0), 
+		temp_i_start, 
+		i-1, 
+		#ECF0F1);
+	window.walls.cieling = {
+		'i_start': temp_i_start, 
+		'i_end': i-1 
+	};
 }
 
 
@@ -175,15 +198,13 @@ void draw() {
 
 	  if (!areHidden) {
 		  // draw the walls
-		 	for (int p = 0; p < 5; p++) {
+		 	for (int p = 0; p < 6; p++) {
 		    walls[p].update();  
+		  }		  
+		 	// draw the hooks
+		 	for (int p = 0; p < i; p++) {
+		    hooks[p].update();  
 		  }
-		  if (!isWireframe) {
-			 	// draw the hooks
-			 	for (int p = 0; p < i; p++) {
-			    hooks[p].update();  
-			  }
-			}
 		}
 	  // draw the faces
 	 	for (int p = 0; p < faces.length; p++) {
@@ -350,6 +371,9 @@ void hideWalls() {
 }
 void wireframe() {
 	isWireframe = !isWireframe;
+}
+void showHideHooks() {
+	isHooks = !isHooks;
 }
 void viewDoorsAndWalls() {
 	isDoorsAndWalls = !isDoorsAndWalls;

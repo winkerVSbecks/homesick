@@ -52,24 +52,28 @@ function tryFindSketch () {
 	  window.doorWall = window.walls.doorWall.i_start;
 	  window.doubleDoorWall = window.walls.doubleDoorWall.i_start;
 	  window.doorlessWall = window.walls.doorlessWall.i_start;
+    window.cieling = window.walls.cieling.i_start;
 	  window.Wall_Visibility = function() { 
 	  	pjs.hideWalls();
 	  };
 	  window.Wireframe = function () {
 	  	pjs.wireframe();
-	  }
+	  };
+    window.Hooks = function () {
+      pjs.showHideHooks();
+    };
     window.DoorsAndWalls = function () {
       pjs.viewDoorsAndWalls();
-    }
+    };
     window.Save = function () {
       pjs.exportShape(loadedId);
-    }
+    };
     window.SaveAsNewShape = function (argument) {
       pjs.exportShape(null);
-    }
+    };
     window.Delete = function () {
       pjs.deleteShape(loadedId);
-    }
+    };
     window.ShapeNo = 0;
     window.LoadShape = function () {
       pjs.loadFaces(loadedData);
@@ -105,6 +109,7 @@ function tryFindSketch () {
   	var wall2 = f2.add(window, 'doorWall', window.walls.doorWall.i_start, window.walls.doorWall.i_end).step(1);
   	var wall3 = f2.add(window, 'doubleDoorWall', window.walls.doubleDoorWall.i_start, window.walls.doubleDoorWall.i_end).step(1);
   	var wall4 = f2.add(window, 'doorlessWall', window.walls.doorlessWall.i_start, window.walls.doorlessWall.i_end).step(1);
+    var wall5 = f2.add(window, 'cieling', window.walls.cieling.i_start, window.walls.cieling.i_end).step(1);
 
   	// Build Face
   	f3.add(window, 'Add_Point');
@@ -114,6 +119,7 @@ function tryFindSketch () {
     // Visibility
   	f4.add(window, 'Wall_Visibility');
   	f4.add(window, 'Wireframe');
+    f4.add(window, 'Hooks');
     f4.add(window, 'DoorsAndWalls');
 
     // Load/Export
@@ -147,6 +153,9 @@ function tryFindSketch () {
 		wall4.onChange(function(value) {
 		  pjs.selectHook(4, value);
 		});
+    wall5.onChange(function(value) {
+      pjs.selectHook(5, value);
+    });
 
     shapeNumber.onChange(function(value) {
       window.shapeName = shapes[value].name;
