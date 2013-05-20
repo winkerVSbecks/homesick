@@ -11,8 +11,10 @@ var loadedId;
 window.onload = function () {
   $.getJSON('/shapes', function(json) {
     shapes = json.shapes;
-    loadedData = shapes[0].faces;
-    loadedId = shapes[0]._id;
+    if (shapes.length > 0) {
+      loadedData = shapes[shapes.length-1].faces;
+      loadedId = shapes[shapes.length-1]._id;
+    }
   });
 	window.walls = {};
   window.exprt = {
@@ -60,16 +62,19 @@ function tryFindSketch () {
       pjs.viewDoorsAndWalls();
     }
     window.Save = function () {
-      pjs.exportFaces(loadedId);
+      pjs.exportShape(loadedId);
     }
     window.SaveAsNewShape = function (argument) {
-      pjs.exportFaces(null);
+      pjs.exportShape(null);
+    }
+    window.Delete = function () {
+      pjs.deleteShape(loadedId);
     }
     window.ShapeNo = 0;
     window.LoadShape = function () {
       pjs.loadFaces(loadedData);
     };
-    window.shapeName = shapes[0].name;
+    window.shapeName = (shapes.length > 0) ? shapes[0].name : "No Shape Loaded";
     window.ShowPolygons = function () {
       pjs.polygonsVisibility();
     };
@@ -117,6 +122,7 @@ function tryFindSketch () {
     f5.add(window, 'LoadShape');
     f5.add(window, 'Save');
     f5.add(window, 'SaveAsNewShape');
+    f5.add(window, 'Delete');
 
     // Polygons
     f6.add(window, 'ShowPolygons');
@@ -151,8 +157,8 @@ function tryFindSketch () {
     // -------------------------------------------
     // EXPORT FACES
     // -------------------------------------------
-    window.saveFaces = function (idToSave) {
-       
+    window.saveShape = function (idToSave) {
+      // Build Save Object
       window.exprt.nodes.forEach( function(vArr) {
         var face = [];
         vArr.forEach( function (v) {
@@ -165,11 +171,8 @@ function tryFindSketch () {
         });
         window.exprt.faces.push(face);
       });
-
+      // Choose save url
       var saveUrl = (!idToSave) ? '/shapes' : '/shapes/'+idToSave;
-
-      console.log(saveUrl);
-
       // Post data to server
       $.ajax({
         type: 'POST',
@@ -180,6 +183,21 @@ function tryFindSketch () {
         },
         success: function(data) {
           console.log("Success", data);
+        },
+        failure: function(data) {
+          console.log("Failed", data);
+        }
+      });
+    };
+    window.deleteShape = function (idToSave) {
+      var saveUrl = '/shapes/'+idToSave+'/delete';
+      // GET request to server
+      $.ajax({
+        type: 'GET',
+        url: saveUrl,
+        success: function(data) {
+          console.log("Success", data);
+          window.shapeName = "No Shape Loaded";
         },
         failure: function(data) {
           console.log("Failed", data);

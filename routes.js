@@ -42,3 +42,11 @@ exports.updateShape = function (req, res) {
   }); 
   res.end();
 };
+
+exports.deleteShape = function (req, res) {
+  console.log(req.param('id'));
+  ShapeProvider.deleteById(req.param('id'), function() {
+    console.log("shape %s deleted", req.param('id'));
+  }); 
+  res.end();
+};

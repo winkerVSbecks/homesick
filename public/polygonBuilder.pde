@@ -284,7 +284,7 @@ void addFace() {
 
 
 //--------------------------------------
-//	LOAD FACES
+//	LOAD SHAPE
 //--------------------------------------
 void loadFaces(Array input) {
 	// empty faces array
@@ -299,15 +299,24 @@ void loadFaces(Array input) {
 	});
 }
 //--------------------------------------
-//	EXPORT FACES
+//	EXPORT SHAPE
 //--------------------------------------
-void exportFaces(idToSave) {
+void exportShape(idToSave) {
 	// push to export object
 	for (int p = 0; p < faces.length; p++) {
     window.exprt.nodes.push(faces[p].nodes);
   }
   // ajax post data
-  window.saveFaces(idToSave);
+  window.saveShape(idToSave);
+}
+//--------------------------------------
+//	DELETE SHAPE
+//--------------------------------------
+void deleteShape(idToSave) {
+	// empty faces array
+	faces = [];
+  // ajax post data
+  window.deleteShape(idToSave);
 }
 
 

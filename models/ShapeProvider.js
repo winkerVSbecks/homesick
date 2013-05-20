@@ -18,6 +18,19 @@ var Shape = mongoose.model('Shape');
 *************************************/
 ShapeProvider = function(){};
 
+// Create a new shape
+ShapeProvider.prototype.save = function(saveData) {
+  var shape = new Shape(
+    {
+      name: saveData.shapeName, 
+      faces: saveData.faces
+    }
+  );
+  shape.save(function (err) {
+    console.log("%s data saved", saveData.shapeName);
+  });
+};
+
 // Find all shapes
 ShapeProvider.prototype.findAll = function(callback) {
   Shape.find({}, function (err, shapes) {
@@ -55,26 +68,8 @@ ShapeProvider.prototype.updateById = function(id, faces, shapeName, callback) {
 
 // Delete a shape
 ShapeProvider.prototype.deleteById = function(id, callback) {
-  Shape.remove(id, function (err) {
-    if (!err) {
-      console.log("shape %s deleted", id);
-    }
-  });
-};
-
-// Create a new shape
-ShapeProvider.prototype.save = function(saveData) {
-  console.log(JSON.stringify(saveData));
-  var shape = new Shape(
-    {
-      name: saveData.shapeName, 
-      faces: saveData.faces
-    }
-  );
-
-  shape.save(function (err) {
-    console.log("%s data saved", saveData.shapeName);
-  });
+  Shape.findById(id).remove();
+  callback();
 };
 
 exports.ShapeProvider = ShapeProvider;

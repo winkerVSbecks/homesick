@@ -24,6 +24,7 @@ app.get('/', routes.index);
 app.get('/shapes', routes.shapes);
 app.post('/shapes', routes.saveShape);
 app.post('/shapes/:id', routes.updateShape);
+app.get('/shapes/:id/delete', routes.deleteShape);
 
 // Start App
 app.listen(process.env.PORT || 3000);
