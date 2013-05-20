@@ -26,13 +26,19 @@ exports.shapes = function (req, res) {;
 };
 
 exports.saveShape = function (req, res) {
-
+  // Create save object
 	var saveData = { 
     faces: JSON.parse(req.body.faces), 
     shapeName: JSON.parse(req.body.shapeName) 
   };
-
   ShapeProvider.save(saveData); 
-
 	res.end();
+};
+
+exports.updateShape = function (req, res) {
+  // Create save object
+  ShapeProvider.updateById(req.param('id'), JSON.parse(req.body.faces), JSON.parse(req.body.shapeName), function(error, client) {
+    console.log("shape updated");
+  }); 
+  res.end();
 };

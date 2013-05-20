@@ -1,9 +1,12 @@
+'use strict';
+
+// Requires
 var express = require('express')
 	, routes = require('./routes')
 	, app = module.exports = express();
 	
 
- // CONFIGURATION
+// CONFIGURATION
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'ejs');
@@ -14,13 +17,14 @@ app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
-
+// Views
 app.get('/app', routes.app);
 app.get('/', routes.index);
 // Data API
 app.get('/shapes', routes.shapes);
 app.post('/shapes', routes.saveShape);
+app.post('/shapes/:id', routes.updateShape);
 
-
+// Start App
 app.listen(process.env.PORT || 3000);
 console.log('Listening on port 3000');

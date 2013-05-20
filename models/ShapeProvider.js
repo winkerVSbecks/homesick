@@ -29,17 +29,6 @@ ShapeProvider.prototype.findAll = function(callback) {
   }); 
 };
 
-// Find shape by name
-ShapeProvider.prototype.findByUsername = function(username, callback) {
-  Shape.findOne({ 'name': name }, function(err, shape) {
-    if (!err) {
-      callback(null, shape);
-    } else {
-      callback(error, null);
-    }
-  });
-};
-
 // Find shape by ID
 ShapeProvider.prototype.findById = function(id, callback) {
   Shape.findById(id, function (err, shape) {
@@ -52,11 +41,12 @@ ShapeProvider.prototype.findById = function(id, callback) {
 };
 
 // Update shape by ID
-ShapeProvider.prototype.updateById = function(id, storesData, callback) {
-  Shape.findOne({ 'id': id }, function (err, user) {
+ShapeProvider.prototype.updateById = function(id, faces, shapeName, callback) {
+  Shape.findById(id, function (err, shape) {
     if (!err) {
-      user.stores = storesData["stores"];
-      user.save(function(err) {
+      shape.faces = faces;
+      shape.name = shapeName;
+      shape.save(function(err) {
         callback();
       });
     }

@@ -6,11 +6,13 @@
 //  Globals
 var shapes;
 var loadedData;
+var loadedId;
 
 window.onload = function () {
   $.getJSON('/shapes', function(json) {
     shapes = json.shapes;
     loadedData = shapes[0].faces;
+    loadedId = shapes[0]._id;
   });
 	window.walls = {};
   window.exprt = {
@@ -57,8 +59,11 @@ function tryFindSketch () {
     window.DoorsAndWalls = function () {
       pjs.viewDoorsAndWalls();
     }
-    window.Export = function () {
-      pjs.exportFaces();
+    window.Save = function () {
+      pjs.exportFaces(loadedId);
+    }
+    window.SaveAsNewShape = function (argument) {
+      pjs.exportFaces(null);
     }
     window.ShapeNo = 0;
     window.LoadShape = function () {
@@ -110,7 +115,8 @@ function tryFindSketch () {
     f5.add(window, 'shapeName').listen();
     var shapeNumber = f5.add(window, 'ShapeNo', 0, Object.size(shapes)-1).step(1);
     f5.add(window, 'LoadShape');
-    f5.add(window, 'Export');
+    f5.add(window, 'Save');
+    f5.add(window, 'SaveAsNewShape');
 
     // Polygons
     f6.add(window, 'ShowPolygons');
@@ -139,12 +145,13 @@ function tryFindSketch () {
     shapeNumber.onChange(function(value) {
       window.shapeName = shapes[value].name;
       loadedData = shapes[value].faces;
+      loadedId = shapes[value]._id;
     });
 
     // -------------------------------------------
     // EXPORT FACES
     // -------------------------------------------
-    window.saveFaces = function () {
+    window.saveFaces = function (idToSave) {
        
       window.exprt.nodes.forEach( function(vArr) {
         var face = [];
@@ -159,24 +166,26 @@ function tryFindSketch () {
         window.exprt.faces.push(face);
       });
 
+      var saveUrl = (!idToSave) ? '/shapes' : '/shapes/'+idToSave;
+
+      console.log(saveUrl);
+
       // Post data to server
       $.ajax({
         type: 'POST',
-        url: '/shapes',
+        url: saveUrl,
         data: { 
           faces: JSON.stringify(window.exprt.faces),  
           shapeName: JSON.stringify(window.shapeName),  
         },
-        success: function(data) 
-          {
-            console.log("Success", data);
-          },
-        failure: function(data) 
-          {
-            console.log("Failed", data);
-          }
+        success: function(data) {
+          console.log("Success", data);
+        },
+        failure: function(data) {
+          console.log("Failed", data);
+        }
       });
-    }
+    };
   }
 }
 

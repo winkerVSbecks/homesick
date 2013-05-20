@@ -301,13 +301,13 @@ void loadFaces(Array input) {
 //--------------------------------------
 //	EXPORT FACES
 //--------------------------------------
-void exportFaces() {
+void exportFaces(idToSave) {
 	// push to export object
 	for (int p = 0; p < faces.length; p++) {
     window.exprt.nodes.push(faces[p].nodes);
   }
   // ajax post data
-  window.saveFaces();
+  window.saveFaces(idToSave);
 }
 
 
