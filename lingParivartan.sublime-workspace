@@ -1,0 +1,1736 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"y",
+				"yRot"
+			],
+			[
+				"up",
+				"updateGUI"
+			],
+			[
+				"fl",
+				"floorHook"
+			],
+			[
+				"is",
+				"isHidden"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"wd",
+				"wd"
+			],
+			[
+				"ac",
+				"activeHook"
+			],
+			[
+				"rs",
+				"res"
+			],
+			[
+				"W",
+				"width"
+			],
+			[
+				"creat",
+				"createGraphics"
+			],
+			[
+				"w",
+				"wdth"
+			],
+			[
+				"dra",
+				"drawWalls"
+			],
+			[
+				"sub",
+				"subOrder"
+			],
+			[
+				"order",
+				"orderNo"
+			],
+			[
+				"isS",
+				"isSubmitted"
+			],
+			[
+				"conte",
+				"contentString"
+			],
+			[
+				"st",
+				"stringify"
+			],
+			[
+				"new",
+				"newOrder"
+			],
+			[
+				"Strin",
+				"stringify"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"c",
+				"cl	console.log"
+			],
+			[
+				"id",
+				"_id"
+			],
+			[
+				"Sub",
+				"SubOrder"
+			],
+			[
+				"en",
+				"ensureAuthenticated"
+			],
+			[
+				"re",
+				"req	require"
+			],
+			[
+				"csv",
+				"csvdata"
+			],
+			[
+				"Clie",
+				"Client"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"ex",
+				"exports"
+			],
+			[
+				"use",
+				"userProvider"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"rou",
+				"routes"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"seq",
+				"sequence"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"fe",
+				"filter	$filter"
+			],
+			[
+				"time",
+				"timeout	setTimeout function"
+			],
+			[
+				"tim",
+				"timeoutId"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"click",
+				"clicked"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"lin",
+				"linkedMotis"
+			],
+			[
+				"upda",
+				"updated_data"
+			],
+			[
+				"moti",
+				"motiID"
+			],
+			[
+				"Shi",
+				"ShippingAddress"
+			],
+			[
+				"docke",
+				"docketNo  (variable)"
+			],
+			[
+				"dock",
+				"docket"
+			],
+			[
+				"isD",
+				"isDoubleSided"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"alert",
+				"alert-error"
+			],
+			[
+				"_cos",
+				"_costMultiplier"
+			],
+			[
+				"de",
+				"description  (variable)"
+			],
+			[
+				"project",
+				"project"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"all",
+				"allUsers"
+			],
+			[
+				"com",
+				"completed"
+			],
+			[
+				"sta",
+				"startDate"
+			],
+			[
+				"val",
+				"validate"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"Print",
+				"Printer"
+			],
+			[
+				"customer",
+				"CustomerList"
+			],
+			[
+				"shi",
+				"shippingBoxes"
+			],
+			[
+				"shipping",
+				"shippingBox"
+			],
+			[
+				"fi",
+				"finishes"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"ship",
+				"shipAdd"
+			],
+			[
+				"ki",
+				"kittingCost"
+			],
+			[
+				"fini",
+				"finishes"
+			],
+			[
+				"fin",
+				"finishToRemove"
+			],
+			[
+				"Finis",
+				"FinishesList"
+			],
+			[
+				"Lis",
+				"ListProperty"
+			],
+			[
+				"getCos",
+				"getCostOfDesign"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"Re",
+				"Reference"
+			],
+			[
+				"pr",
+				"projectCount"
+			],
+			[
+				"projec",
+				"project"
+			],
+			[
+				"do",
+				"doCut  (variable)"
+			],
+			[
+				"cut",
+				"cutCost"
+			],
+			[
+				"lim",
+				"limit"
+			],
+			[
+				"la",
+				"labourCost"
+			],
+			[
+				"cost",
+				"costList"
+			],
+			[
+				"a",
+				"ancestor"
+			],
+			[
+				"cos",
+				"costList"
+			],
+			[
+				"Shipp",
+				"ShippingBox"
+			],
+			[
+				"doc",
+				"docket"
+			],
+			[
+				"Dae",
+				"DateTimeProperty"
+			],
+			[
+				"type",
+				"projectType"
+			],
+			[
+				"Prin",
+				"Printer"
+			],
+			[
+				"docketlist",
+				"docketlist_name"
+			],
+			[
+				"Add",
+				"AddATestDocket  (function)"
+			],
+			[
+				"I",
+				"Invoice  (class)"
+			],
+			[
+				"post",
+				"postalCode"
+			],
+			[
+				"total",
+				"totalCostOfMaterial"
+			],
+			[
+				"area",
+				"areaOfPrint"
+			],
+			[
+				"ar",
+				"areaOfPrint"
+			],
+			[
+				"are",
+				"areaOfPrint"
+			],
+			[
+				"prin",
+				"printerSpeed"
+			],
+			[
+				"flat",
+				"flatbedSpeed"
+			],
+			[
+				"tota",
+				"totalPrintingTime"
+			],
+			[
+				"how",
+				"howManyUp"
+			],
+			[
+				"to",
+				"totalCostOfSpecial"
+			],
+			[
+				"cal",
+				"calculatedCost"
+			],
+			[
+				"i",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 635,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes.js",
+			"settings":
+			{
+				"buffer_size": 792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/polygonBuilder.pde",
+			"settings":
+			{
+				"buffer_size": 8648,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/ui.js",
+			"settings":
+			{
+				"buffer_size": 5375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/index.ejs",
+			"settings":
+			{
+				"buffer_size": 6641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 438,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/todo.md",
+			"settings":
+			{
+				"buffer_size": 272,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"Package Control: disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"fol",
+				"Code Folding: Unfold All"
+			],
+			[
+				"",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"Snippet: lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"file_history":
+	[
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-octet-stream.js",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/.gitignore",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/public/polygon.pde",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/ui.js",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/polygonBuilder.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/models/ShapeProvider.js",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/routes.js",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/app.js",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/css/skeleton.css",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/todo.md",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/css/style.css",
+		"/Users/winkerVSbecks/Desktop/thesisProjectApp/css/base.css",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/views/index.ejs",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/css/skeleton.css",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/views/app.ejs",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/package.json",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/faces.json",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/css/style.css",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/face.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/todo.md",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/css/styles.css",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/css/base.css",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/faces.json",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/public/app.js",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/hook.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/wall.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/face.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/index.html",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/ui.js",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/polygonBuilder.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/picker_alt.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/picker.pde",
+		"/Users/winkerVSbecks/Desktop/polygonBuilder/fullscreen.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/Procfile",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/js/driveRadius.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/css/style.css",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/navbar.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/ordersList.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/submittedOrdersList.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/order.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/submittedSubOrder.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/submittedOrder.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/subOrder.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/store.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/models/clientProvider.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/help.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/views/index.ejs",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/client.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/css/jquery-ui.css",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/css/styles.css",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/. nodemonignore",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/node_modules/ejs/examples/client.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/clientList.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/popup.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/partials/admin.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/data/clientsList.json",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/data/FMI/store.json",
+		"/Users/winkerVSbecks/Desktop/data/RedberryAlberta/store.json",
+		"/Users/winkerVSbecks/Desktop/data/FMI/store.json",
+		"/Users/winkerVSbecks/Desktop/data/MarbleRestaurants/store.json",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/app.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/subOrder.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/app.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/pastebin.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/order.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/store.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/ordersList.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/navbar.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/node_modules/express/node_modules/connect/lib/middleware/directory.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/models/clientProvider.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/editClient.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/package.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/admin.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/users.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/userProvider.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/clientProvider.js",
+		"/Users/winkerVSbecks/Desktop/soco.py",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/Procfile",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/map.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/data/MarbleRestaurants/store.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/. nodemonignore",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/views/admin.ejs",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/clientList.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/data/RedberryAlberta/store.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/node_modules/bcrypt/.travis.yml",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/views/client_new.ejs",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/views/client_show.ejs",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/css/style.css",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/TODO.md",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/profile.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/partials/client.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/node_modules/ejs/examples/client.html",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/data/FMI/store.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/public/data/clientsList.json",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/views/index.ejs",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/views/login.ejs",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/config.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/routes.js",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/README.md",
+		"/Users/winkerVSbecks/Desktop/walkMaps-angular/express-maps-app/controllers.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/package.json",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/routes/index.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/views/login.ejs",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/views/index.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/views/login.html",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/routes/api.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/css/stylesNotFull.css",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/css/bootstrap.css",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/js/app.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/js/services.js",
+		"/Users/winkerVSbecks/Desktop/express-maps-app/public/js/bootstrap.js",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/css/style.css",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/basicController.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/index.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/css/bootstrap.css",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/css/styles.css",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/timelineController.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/dial.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/digiDisplay.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/navigation.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/motorData/test.json",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/README.md",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/js/filters.js",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/customController.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/motorData/controllers/controllers.json",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/resetButton.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/changeIdButton.html",
+		"/Users/winkerVSbecks/Desktop/moti-ui/www/partials/timeline.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"6AD179",
+			"extra-bottom",
+			"add-bottom",
+			"half",
+			"webkit",
+			"ABOUT",
+			"fff",
+			"6AD179",
+			"2ECC71",
+			"FF92AA",
+			"doorlessWallHook",
+			"doubleDoorWallHook",
+			"doorWallHook",
+			"window.windowWall",
+			"windowWallHook",
+			"h3",
+			"add-bottom",
+			"shapeBuilder",
+			"shapebuilder",
+			"walls.",
+			"window.walls.",
+			"window.",
+			"walls.",
+			"walls.floor",
+			"window",
+			"loadedFaces",
+			"EditShape",
+			"orderDate",
+			"Face_No",
+			"Edit_Loaded_Faces",
+			"Load_Faces",
+			"user",
+			"UserProvider",
+			"a:hover",
+			"remove-bottom",
+			"container",
+			"content",
+			"navbar",
+			"a:hover",
+			"nav",
+			"small",
+			"img",
+			"images",
+			"Walls_Visibility",
+			"console.log(",
+			"'id':",
+			"selectInFloor",
+			"unSelectAllHooks",
+			"PHARMACY",
+			"print",
+			"2",
+			"p",
+			"nodes",
+			"0.01",
+			"-Math.PI, Math.PI",
+			"Hook",
+			"println",
+			"i",
+			"PVector",
+			"vertex",
+			"PVector",
+			"200",
+			"this",
+			"fill",
+			"display",
+			"fill",
+			"line",
+			"7CCFC9",
+			"get",
+			"Ball",
+			"lngth",
+			"wdth",
+			"PI",
+			"Point",
+			"polygonBuilder",
+			"walksToggle",
+			"prevWalksOverlaysArray",
+			"createWalksMarkers",
+			"prevWalksOverlaysArray",
+			"walksArray",
+			"length",
+			"orders",
+			"filteredShapes",
+			"findAllBelongingToUser",
+			"sid",
+			"List",
+			"user",
+			"unique",
+			"_latestOrdNo",
+			"$set",
+			"OrderProvider.prototype.delete",
+			"OrderProvider",
+			"deleteOrder",
+			"forEach",
+			"important",
+			"submitData",
+			"handleError",
+			"'/suborders'",
+			"getStore",
+			"$location",
+			"updateById",
+			"updateMarkerSelection",
+			"selecDeselecMarker",
+			"scope",
+			"selecDeselecMarker",
+			"updateMarkerSelection",
+			"console",
+			"img/",
+			"images/",
+			"images",
+			"imgaes",
+			"datepicker",
+			".ui-datepicker",
+			"ui-datepicker-calendar",
+			"datepicker",
+			"http",
+			"/order",
+			"http",
+			"update",
+			"p",
+			"h3",
+			"<br />",
+			"total",
+			"watch",
+			"=",
+			"0",
+			"/img/canadapost",
+			"selecIcon"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"settings":
+					{
+						"buffer_size": 635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes.js",
+					"settings":
+					{
+						"buffer_size": 792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								406,
+								406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "public/polygonBuilder.pde",
+					"settings":
+					{
+						"buffer_size": 8648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Processing/Processing.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/ui.js",
+					"settings":
+					{
+						"buffer_size": 5375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/index.ejs",
+					"settings":
+					{
+						"buffer_size": 6641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 438,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/todo.md",
+					"settings":
+					{
+						"buffer_size": 272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 139.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"todo",
+				"public/todo.md"
+			],
+			[
+				"to",
+				"node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-octet-stream.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"ske",
+				"public/css/skeleton.css"
+			],
+			[
+				"app",
+				"views/app.ejs"
+			],
+			[
+				"fac",
+				"faces.json"
+			],
+			[
+				"index",
+				"views/index.ejs"
+			],
+			[
+				"faces",
+				"faces.json"
+			],
+			[
+				"face",
+				"public/face.pde"
+			],
+			[
+				"styles",
+				"public/css/styles.css"
+			],
+			[
+				"css/",
+				"public/css/base.css"
+			],
+			[
+				"fa",
+				"faces.json"
+			],
+			[
+				"",
+				"Procfile"
+			],
+			[
+				"style",
+				"public/css/style.css"
+			],
+			[
+				"nav",
+				"public/partials/navbar.html"
+			],
+			[
+				"drive",
+				"public/js/driveRadius.js"
+			],
+			[
+				"list",
+				"public/partials/ordersList.html"
+			],
+			[
+				"st",
+				"public/css/style.css"
+			],
+			[
+				"sub",
+				"public/partials/subOrder.html"
+			],
+			[
+				"store",
+				"public/partials/store.html"
+			],
+			[
+				"clie",
+				"models/clientProvider.js"
+			],
+			[
+				"order",
+				"public/partials/ordersList.html"
+			],
+			[
+				"stor",
+				"public/partials/store.html"
+			],
+			[
+				"clien",
+				"public/partials/client.html"
+			],
+			[
+				"sty",
+				"public/css/style.css"
+			],
+			[
+				"jquery",
+				"public/css/jquery-ui.css"
+			],
+			[
+				"node",
+				". nodemonignore"
+			],
+			[
+				"orde",
+				"public/partials/order.html"
+			],
+			[
+				"client",
+				"public/partials/client.html"
+			],
+			[
+				"index.ejs",
+				"views/index.ejs"
+			],
+			[
+				"admin",
+				"public/partials/admin.html"
+			],
+			[
+				"user",
+				"models/userProvider.js"
+			],
+			[
+				"pas",
+				"pastebin.js"
+			],
+			[
+				"or",
+				"public/partials/order.html"
+			],
+			[
+				"direc",
+				"node_modules/express/node_modules/connect/lib/middleware/directory.js"
+			],
+			[
+				"cli",
+				"models/clientProvider.js"
+			],
+			[
+				"cl",
+				"models/clientProvider.js"
+			],
+			[
+				"edi",
+				"public/partials/editClient.html"
+			],
+			[
+				"ore",
+				"public/partials/order.html"
+			],
+			[
+				"edit",
+				"public/partials/editClient.html"
+			],
+			[
+				"users",
+				"users.json"
+			],
+			[
+				"map",
+				"public/partials/map.html"
+			],
+			[
+				"clients",
+				"public/partials/clientList.html"
+			],
+			[
+				"navi",
+				"node_modules/bcrypt/.travis.yml"
+			],
+			[
+				"t",
+				"TODO.md"
+			],
+			[
+				"stores",
+				"public/data/FMI/store.json"
+			],
+			[
+				"store.json",
+				"public/data/FMI/store.json"
+			],
+			[
+				"clientslist",
+				"public/data/clientsList.json"
+			],
+			[
+				"users.js",
+				"users.json"
+			],
+			[
+				"rou",
+				"routes.js"
+			],
+			[
+				"login",
+				"views/login.ejs"
+			],
+			[
+				"na",
+				"public/partials/navbar.html"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"logi",
+				"views/login.ejs"
+			],
+			[
+				"boot",
+				"public/css/bootstrap.css"
+			],
+			[
+				"test",
+				"motorData/test.json"
+			],
+			[
+				"basic",
+				"partials/basicController.html"
+			],
+			[
+				"time",
+				"partials/timelineController.html"
+			],
+			[
+				"dial",
+				"partials/dial.html"
+			],
+			[
+				"basi",
+				"partials/basicController.html"
+			],
+			[
+				"tes",
+				"motorData/test.json"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"filt",
+				"js/filters.js"
+			],
+			[
+				"cust",
+				"partials/customController.html"
+			],
+			[
+				"controllers",
+				"motorData/controllers/controllers.json"
+			],
+			[
+				"rese",
+				"partials/resetButton.html"
+			],
+			[
+				"car",
+				"motorData/controllers/car-remote.json"
+			],
+			[
+				"cus",
+				"partials/customController.html"
+			],
+			[
+				"boo",
+				"css/bootstrap.css"
+			],
+			[
+				"serv",
+				"js/services.js"
+			],
+			[
+				"kont",
+				"lib/jquery.kontrol.js"
+			],
+			[
+				"servic",
+				"js/services.js"
+			],
+			[
+				"data",
+				"motorData/test.json"
+			],
+			[
+				"bas",
+				"partials/basicController.html"
+			],
+			[
+				"ensu",
+				"lib/ensure.js"
+			],
+			[
+				"j",
+				"lib/jquery.kontrol.js"
+			],
+			[
+				"kontro",
+				"lib/jquery.kontrol.js"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"ser",
+				"js/services.js"
+			],
+			[
+				"dia",
+				"partials/dial.html"
+			],
+			[
+				"sim",
+				"partials/simpleButton.html"
+			],
+			[
+				"di",
+				"partials/dial.html"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"editslider",
+				"partials/editSlider.html"
+			],
+			[
+				"re",
+				"partials/resetButton.html"
+			],
+			[
+				"ed",
+				"partials/editMode.html"
+			],
+			[
+				"tog",
+				"partials/toggleButton.html"
+			],
+			[
+				"slider",
+				"partials/slider.html"
+			],
+			[
+				"si",
+				"partials/simpleButton.html"
+			],
+			[
+				"sli",
+				"partials/slider.html"
+			],
+			[
+				"fil",
+				"js/filters.js"
+			],
+			[
+				"custo",
+				"motorData/custom-remote.json"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"togg",
+				"partials/toggleButton.html"
+			],
+			[
+				"d",
+				"partials/dial.html"
+			],
+			[
+				"hook",
+				"js/hook/hook.js"
+			],
+			[
+				"ho",
+				"js/hook/hook.js"
+			],
+			[
+				"stye",
+				"css/style.css"
+			],
+			[
+				"cutom",
+				"partials/customController.html"
+			],
+			[
+				"custom",
+				"partials/customController.html"
+			],
+			[
+				"slid",
+				"partials/slider.html"
+			],
+			[
+				"prin",
+				"templates/printerList.html"
+			],
+			[
+				"ma",
+				"templates/materialList.html"
+			],
+			[
+				"editpr",
+				"templates/editPrinter.html"
+			],
+			[
+				"print",
+				"templates/printerList.html"
+			],
+			[
+				"mate",
+				"templates/materialList.html"
+			],
+			[
+				"base",
+				"templates/base.html"
+			],
+			[
+				"mater",
+				"templates/materialList.html"
+			],
+			[
+				"btn",
+				"static/js/libs/bootstrap/transition.js"
+			],
+			[
+				"adm",
+				"admin.py"
+			],
+			[
+				"docket",
+				"templates/createDocket.html"
+			],
+			[
+				"sy",
+				"static/css/style.css"
+			],
+			[
+				"ad",
+				"templates/admin.html"
+			],
+			[
+				"ap",
+				"app.yaml"
+			],
+			[
+				"doc",
+				"templates/docket_control.html"
+			],
+			[
+				"docke",
+				"templates/docket_control.html"
+			],
+			[
+				"dock",
+				"templates/docket_control.html"
+			],
+			[
+				"customer",
+				"templates/customerList.html"
+			],
+			[
+				"cret",
+				"templates/createDocket.html"
+			],
+			[
+				"b",
+				"templates/base.html"
+			],
+			[
+				"invoic",
+				"templates/docket_invoice.html"
+			],
+			[
+				"docketcon",
+				"templates/docket_control.html"
+			],
+			[
+				"docketc",
+				"templates/docket_control.html"
+			],
+			[
+				"delete",
+				"django/contrib/comments/templates/comments/delete.html"
+			],
+			[
+				"printer",
+				"templates/printerList.html"
+			],
+			[
+				"syl",
+				"static/css/style.css"
+			],
+			[
+				"paste",
+				"templates/pastebin.html"
+			],
+			[
+				"do",
+				"templates/docket_control.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true
+}
