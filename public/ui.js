@@ -167,6 +167,7 @@ function tryFindSketch () {
     // EXPORT FACES
     // -------------------------------------------
     window.saveShape = function (idToSave) {
+      window.exprt.faces = [];
       // Build Save Object
       window.exprt.nodes.forEach( function(vArr) {
         var face = [];

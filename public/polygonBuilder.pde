@@ -267,6 +267,19 @@ void doorsAndWindows() {
 		vertex(wd,224,ld-1);
 		vertex(0,224,ld-1);
 	endShape(CLOSE);
+	// doorless door
+	beginShape();
+		vertex(wd-1,149,ld-302);
+		vertex(wd-1,hd,ld-302);
+		vertex(wd-1,hd,ld-439);
+		vertex(wd-1,149,ld-439);
+	endShape(CLOSE);
+	beginShape();
+		vertex(wd+1,149,ld-302);
+		vertex(wd+1,hd,ld-302);
+		vertex(wd+1,hd,ld-439);
+		vertex(wd+1,149,ld-439);
+	endShape(CLOSE);
 }
 
 
@@ -323,6 +336,7 @@ void loadFaces(Array input) {
 //	EXPORT SHAPE
 //--------------------------------------
 void exportShape(idToSave) {
+	window.exprt.nodes = [];
 	// push to export object
 	for (int p = 0; p < faces.length; p++) {
     window.exprt.nodes.push(faces[p].nodes);
