@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" ng-app="exportPolygons">
+<head>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Call Me They</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons and app icons
+	================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+</head>
+<body ng-controller="ShapeCtrl">
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- NAVBAR -->
+		<div class="sixteen columns small-bottom">
+			<div class="navbar">
+				<h1>
+					<a href="/">Call Me They</a>
+					<small class="subheader version">version 1.4</small></h1>
+					<ul>
+						<li><a href="/#about">about</a></li>
+						<li><a href="/app" target="_blank">shape-builder</a></li>
+					</ul>
+			</div>
+			<hr />
+		</div>
+		<!-- END NAVBAR -->
+
+		<!-- LEAD -->
+		<div class="sixteen columns small-bottom">
+			<p class="lead">The designed shapes are made up of three and four sided polygons. Please select a shape in order to split it into it's constituting polygons and provide you with their individual dimensions. Also, listed below is the total area of fabric required to build this shape at 100% scale.</p>
+		</div>
+		<!-- END LEAD -->
+
+		<div>
+			<h2 class="twelve columns">{{selectedShape.name || 'select a shape' | lowercase}}</h2>
+			<!-- LIST OF SHAPES -->
+			<form class="four columns pull-right">
+				<select 
+					ng-model="selectedShape" 
+					ng-options="shape.name for shape in shapes | orderBy:'_id':true | limitTo:25"
+					ng-change="update()">
+				  <option value=""> List of Shapes</option>
+				</select>
+			</form>
+			<!-- END LIST OF SHAPES -->
+			<hr>
+		</div>
+
+		<!-- POLYGONS FOR SELECTED SHAPE -->
+		<div class="sixteen columns add-bottom">
+
+			<div ng-repeat="face in selectedShape.faces">
+
+				<h4>face #{{$index+1}} <em>({{face.length}} sided)</em></h4>
+
+				<!-- LIST OF POINTS -->
+				<ul class="circle two columns offset-by-one">
+					<li ng-repeat="point in face">({{point.x}},{{point.y}},{{point.z}})</li>
+				</ul>
+				<!-- END LIST OF POINTS -->
+
+				<!-- LENGTH OF SIDES -->
+				<ul class="circle two columns offset-by-one">
+					<li ng-repeat="length in face.lengths">{{length.toFixed(2) | number}} m</li>
+				</ul>
+				<!-- END LENGTH OF SIDES -->
+
+				<!-- AREA -->
+				<p class="four columns offset-by-one">Area: <em>{{face.area.toFixed(2) | number}} sq. meter</em><br />Area (trngle): <em>{{face.triArea.toFixed(2) | number}} sq. meter</em></p>
+				<!-- END AREA -->
+
+				<br class="clear" />
+			</div>
+
+			<!-- TOTALS -->
+			<div ng-show="selectedShape" class="sixteen columns add-bottom">
+				<h3>Total Area: <em>{{selectedShape.totalArea.toFixed(2) | number}} sq. meter</em></h3>
+				<h3>
+					Length of Fabric Required: 
+					<em>{{getLengthOfFabric(selectedShape.totalArea, 45) | number}} m or {{getLengthOfFabric(selectedShape.totalArea, 45)*1.09361 | number}} yards</em>
+				</h3>
+			</div>
+			<!-- END TOTALS -->
+
+		</div>
+    <!-- END POLYGONS FOR SELECTED SHAPE -->
+
+
+	</div><!-- END CONTAINER -->
+
+
+	<!-- Le Javascript
+	================================================== -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="libs/modernizr.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/angular-resource.min.js"></script>
+	<script src="js/vector.js"></script>
+	<script src="js/angular-app.js"></script>
+</body>
+</html>

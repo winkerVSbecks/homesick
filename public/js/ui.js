@@ -79,13 +79,16 @@ function tryFindSketch () {
       pjs.loadFaces(loadedData);
     };
     window.shapeName = (shapes.length > 0) ? shapes[0].name : "No Shape Loaded";
-    window.ShowPolygons = function () {
-      pjs.polygonsVisibility();
-    };
+    // window.ShowPolygons = function () {
+    //   pjs.polygonsVisibility();
+    // };
+    // window.BuildPolygons = function () {
+    //   pjs.buildPolygons();
+    // };
+    // window.PolygonNo = 0;
     window.BuildPolygons = function () {
-      pjs.buildPolygons();
+      window.location = '/export';
     };
-    window.PolygonNo = 0;
 
   	// create gui folder
   	var gui = new dat.GUI();
@@ -94,7 +97,7 @@ function tryFindSketch () {
   	var f3 = gui.addFolder('Build Faces');
   	var f4 = gui.addFolder('View Settings');
     var f5 = gui.addFolder('I/O');
-    var f6 = gui.addFolder('Polygons');
+    // var f6 = gui.addFolder('Polygons');
 
   	// Orientation
   	f1.add(window, 'xRot', -180,180).listen();
@@ -131,9 +134,10 @@ function tryFindSketch () {
     f5.add(window, 'Delete');
 
     // Polygons
-    f6.add(window, 'ShowPolygons');
-    f6.add(window, 'BuildPolygons');
-    f6.add(window, 'PolygonNo', 0, 25).step(1);
+    gui.add(window, 'BuildPolygons');
+    // f6.add(window, 'ShowPolygons');
+    // f6.add(window, 'BuildPolygons');
+    // f6.add(window, 'PolygonNo', 0, 25).step(1);
 
     // -------------------------------------------
   	// on change functions for hook selection

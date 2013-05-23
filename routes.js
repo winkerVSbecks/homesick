@@ -5,6 +5,9 @@ var ShapeProvider = require('./models/ShapeProvider').ShapeProvider
 	, ShapeProvider = new ShapeProvider();
 
 
+// ----------------------------------
+// ----------- VIEWS ------------
+// ----------------------------------
 exports.index = function (req, res) {
   res.render('index', {});
 };
@@ -13,9 +16,13 @@ exports.app = function (req, res) {
   res.render('app', {});
 };
 
+exports.polygons = function (req, res) {
+  res.render('polygons', {});
+};
+
 
 // ----------------------------------
-// ----------- SHAPESAPI ------------
+// ---------- SHAPES API ------------
 // ----------------------------------
 exports.shapes = function (req, res) {;
   ShapeProvider.findAll(function (error, shapes) {

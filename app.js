@@ -19,6 +19,7 @@ app.configure(function(){
 
 // Views
 app.get('/app', routes.app);
+app.get('/polygons', routes.polygons);
 app.get('/', routes.index);
 // Data API
 app.get('/shapes', routes.shapes);
