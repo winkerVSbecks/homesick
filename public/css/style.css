@@ -89,6 +89,13 @@ img.one-third.column  {
 		float: left;
 		text-align: left;
 	}
+
+	.navbar h1 a {
+		border-bottom: 0;
+	}
+	.navbar h1 {
+		margin-bottom: 40px;
+	}
 }	
 
 @media all and (max-width: 480px) {
