@@ -57,7 +57,7 @@
 			<form class="four columns pull-right">
 				<select 
 					ng-model="selectedShape" 
-					ng-options="shape.name for shape in shapes | orderBy:'_id':true | limitTo:25"
+					ng-options="shape.name for shape in shapes | orderBy:'_id':true | limitTo:5"
 					ng-change="update()">
 				  <option value=""> List of Shapes</option>
 				</select>

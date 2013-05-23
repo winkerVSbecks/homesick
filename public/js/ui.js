@@ -87,7 +87,7 @@ function tryFindSketch () {
     // };
     // window.PolygonNo = 0;
     window.BuildPolygons = function () {
-      window.location = '/export';
+      window.location = '/polygons';
     };
 
   	// create gui folder
