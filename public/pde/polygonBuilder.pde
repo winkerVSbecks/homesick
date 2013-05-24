@@ -11,7 +11,6 @@ Hook[] hooks = new Hook[634];
 Wall[] walls =  new Wall[6];
 Face[] faces = new Face[0];
 Polygon[] polygons = new Polygon[0];
-Face[] loadedFaces = new Face[0];
 
 int i;
 int wallCnt = 0;
@@ -23,6 +22,8 @@ Boolean isWireframe = false;
 Boolean isDoorsAndWalls = false;
 Boolean isDrawPolygons = false;
 Boolean isHooks = true;
+
+Colors cols = { #F1C340, #F1C340, #E87B35, #E87B35, #2C3E4F, #EA4740, #EA4740, #2C3E4F, #2C3E4F, #2C3E4F, #2C3E4F, #2781B5, #2781B5, #0FAF68, #F1C340, #E87B35, #0FAF68, #E87B35, #F1C340, #BDC3C7, #BDC3C7 };
 
 
 //--------------------------------------
@@ -208,11 +209,22 @@ void draw() {
 		}
 	  // draw the faces
 	 	for (int p = 0; p < faces.length; p++) {
-	    faces[p].update();
-	  }
-	  // draw the loaded faces
-	 	for (int p = 0; p < loadedFaces.length; p++) {
-	    loadedFaces[p].update();
+	 		if (cols[p]) {
+	 			faces[p].c = cols[p];
+	 		}
+	 		if (window.shapeName == 'production version #1') {
+		 		if (p==19) {
+		 			Colors colsForFaces = { #E87B35, #0FAF68, #F1C340, #0FAF68 };
+		 			faces[p].fancyUpdate(new PVector(267.969, 344.938, 326.563), colsForFaces);
+		 		} else if (p==20) {
+		 			Colors colsForFaces = {  #EA4740, #BDC3C7, #EA4740, #2781B5 };
+		 			faces[p].fancyUpdate(new PVector(248.551, 178.986, 72.4638), colsForFaces);
+		 		} else {
+		    	faces[p].update();
+		    }
+	    } else {
+	    	faces[p].update();
+	    }
 	  }
 	  // Draw doors and windows
 	  if (!isDoorsAndWalls) {

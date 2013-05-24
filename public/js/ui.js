@@ -62,7 +62,7 @@ function tryFindSketch () {
     window.Hooks = function () {
       pjs.showHideHooks();
     };
-    window.DoorsAndWalls = function () {
+    window.DoorsAndWindows = function () {
       pjs.viewDoorsAndWalls();
     };
     window.Save = function () {
@@ -123,7 +123,7 @@ function tryFindSketch () {
   	f4.add(window, 'Wall_Visibility');
   	f4.add(window, 'Wireframe');
     f4.add(window, 'Hooks');
-    f4.add(window, 'DoorsAndWalls');
+    f4.add(window, 'DoorsAndWindows');
 
     // Load/Export
     f5.add(window, 'shapeName').listen();

@@ -163,6 +163,7 @@ app.directive('polygon', function() {
     restrict: 'A',
     scope: { 
       vertices: '=polygon',  
+      color: '=color'
     },
     link: function(scope, element, attrs)
     {
@@ -203,7 +204,7 @@ app.directive('polygon', function() {
 
         geometry.applyMatrix( new THREE.Matrix4().makeRotationX(Math.PI/2) );
         // Push polygon to scene
-        var material = new THREE.MeshBasicMaterial( { color: 0x2ECC71, side: THREE.DoubleSide } );
+        var material = new THREE.MeshBasicMaterial( { color: cols[scope.color], side: THREE.DoubleSide } );
         polygon = new THREE.Mesh( geometry, material );
         scene.add(polygon);
 
@@ -282,3 +283,5 @@ angular.module('getShapes', ['ngResource']).
 function toDegrees (angle) {
   return angle * (180 / Math.PI);
 }
+
+var cols = [ 0xF1C340, 0xF1C340, 0xE87B35, 0xE87B35, 0x2C3E4F, 0xEA4740, 0xEA4740, 0x2C3E4F, 0x2C3E4F, 0x2C3E4F, 0x2C3E4F, 0x2781B5, 0x2781B5, 0x0FAF68, 0xF1C340, 0xE87B35, 0x0FAF68, 0xE87B35, 0xF1C340, 0xBDC3C7, 0xBDC3C7 ];
