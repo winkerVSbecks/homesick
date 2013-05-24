@@ -32,9 +32,60 @@ function ShapeCtrl ($scope, Shapes) {
         // Calculate area
         face.area = $scope.getArea(face);
         face.triArea = $scope.getAreaOfTraingle(face); 
+        face.angles = $scope.getAngles(face);
       });
+      // Total area
       $scope.selectedShape.totalArea = $scope.getTotalArea($scope.selectedShape.faces);
     }
+  };
+
+  $scope.getAngles = function (points) {
+    var vecs = [];
+    var sides = [];
+    var angles = [];
+    angular.forEach(points, function (p) {
+      var v = new Vector(p.x, p.y, p.z);
+      vecs.push(v);
+    });
+    if (vecs.length === 3) {
+      var v1 = vecs[1].subtract(vecs[0]);
+      var v2 = vecs[2].subtract(vecs[0]);
+      sides.push(v1.length()+", "+v2.length());
+      var angle1 = toDegrees( Math.acos( v1.dot(v2)/(v1.length()*v2.length()) ) );
+      angles.push(angle1);
+      var v3 = vecs[0].subtract(vecs[1]);
+      var v4 = vecs[2].subtract(vecs[1]);
+      sides.push(v3.length()+", "+v4.length());
+      var angle2 = toDegrees( Math.acos( v3.dot(v4)/(v3.length()*v4.length()) ) );
+      angles.push(angle2);
+      var v5 = vecs[0].subtract(vecs[2]);
+      var v6 = vecs[1].subtract(vecs[2]);
+      sides.push(v5.length()+", "+v6.length());
+      var angle3 = toDegrees( Math.acos( v5.dot(v6)/(v5.length()*v6.length()) ) );
+      angles.push(angle3);
+    } else if (vecs.length === 4) {
+      var v1 = vecs[1].subtract(vecs[0]);
+      var v2 = vecs[3].subtract(vecs[0]);
+      sides.push(v1.length()+", "+v2.length());
+      var angle1 = toDegrees( Math.acos( v1.dot(v2)/(v1.length()*v2.length()) ) );
+      angles.push(angle1);
+      var v3 = vecs[0].subtract(vecs[1]);
+      var v4 = vecs[2].subtract(vecs[1]);
+      sides.push(v3.length()+", "+v4.length());
+      var angle2 = toDegrees( Math.acos( v3.dot(v4)/(v3.length()*v4.length()) ) );
+      angles.push(angle2);
+      var v5 = vecs[1].subtract(vecs[2]);
+      var v6 = vecs[3].subtract(vecs[2]);
+      sides.push(v5.length()+", "+v6.length());
+      var angle3 = toDegrees( Math.acos( v5.dot(v6)/(v5.length()*v6.length()) ) );
+      angles.push(angle3);
+      var v7 = vecs[0].subtract(vecs[3]);
+      var v8 = vecs[2].subtract(vecs[3]);
+      sides.push(v7.length()+", "+v8.length());
+      var angle4 = toDegrees( Math.acos( v7.dot(v8)/(v7.length()*v8.length()) ) );
+      angles.push(angle4);
+    }
+    return [angles, sides];
   };
 
   $scope.getArea = function (points) {
@@ -150,24 +201,6 @@ app.directive('polygon', function() {
         }
         THREE.GeometryUtils.center( geometry );
 
-        // var c = new THREE.Vector3();
-        // var nPolygon = new THREE.Vector3();
-        // nPolygon.crossVectors(c.crossVectors( geometry.vertices[0], geometry.vertices[1] ), geometry.vertices[2]);
-
-        // if (nPolygon) {
-        //   var nPolygonX = new THREE.Vector3(nPolygon.x,0,0);
-        //   var xRot = Math.acos(nPolygonX.dot( new THREE.Vector3(1,0,0) )/nPolygonX.length() ); 
-        //   var nPolygonY = new THREE.Vector3(0,nPolygon.y,0);
-        //   var yRot = Math.acos(nPolygonY.dot( new THREE.Vector3(1,0,0) )/nPolygonY.length() ); 
-        //   var nPolygonZ = new THREE.Vector3(0,0,nPolygon.z);
-        //   var zRot = Math.acos(nPolygonZ.dot( new THREE.Vector3(1,0,0) )/nPolygonZ.length() ); 
-        // } 
-
-        // geometry.applyMatrix( new THREE.Matrix4().makeRotationX(xRot) );
-        // geometry.applyMatrix( new THREE.Matrix4().makeRotationY(yRot) );
-        // geometry.applyMatrix( new THREE.Matrix4().makeRotationZ(zRot) );
-
-
         geometry.applyMatrix( new THREE.Matrix4().makeRotationX(Math.PI/2) );
         // Push polygon to scene
         var material = new THREE.MeshBasicMaterial( { color: 0x2ECC71, side: THREE.DoubleSide } );
@@ -242,3 +275,10 @@ angular.module('getShapes', ['ngResource']).
       });
     return Shapes;
   });
+
+
+
+// HELPERS
+function toDegrees (angle) {
+  return angle * (180 / Math.PI);
+}

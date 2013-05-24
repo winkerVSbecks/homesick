@@ -77,11 +77,17 @@
 			<!-- END POLYGON -->
 
 			<!-- AREA -->
-			<ul class="three columns">
+			<div class="three columns">
 				<label>Area</label> 
-				<li>{{face.area.toFixed(2) | number}} sq. meter</li>
-				<li>{{face.triArea.toFixed(2) | number}} sq. meter<em> (triangle forumla)</em></li>
-			</ul>
+				<ul>
+					<li>{{face.area.toFixed(2) | number}} sq. meter</li>
+					<li>{{face.triArea.toFixed(2) | number}} sq. meter<em> (triangle forumla)</em></li>
+				</ul>
+				<label>Angles</label>
+				<ul class="circle two columns">
+					<li ng-repeat="angle in face.angles">{{angle[0].toFixed(1) | number}}&deg; <em>for {{angle[1]}}</em></li>
+				</ul>
+			</div>
 			<!-- END AREA -->
 
 			<!-- LENGTH OF SIDES -->
