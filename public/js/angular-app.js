@@ -50,38 +50,38 @@ function ShapeCtrl ($scope, Shapes) {
     if (vecs.length === 3) {
       var v1 = vecs[1].subtract(vecs[0]);
       var v2 = vecs[2].subtract(vecs[0]);
-      sides.push(v1.length()+", "+v2.length());
+      sides.push((v1.length()/100).toFixed(2)+" & "+(v2.length()/100).toFixed(2));
       var angle1 = toDegrees( Math.acos( v1.dot(v2)/(v1.length()*v2.length()) ) );
       angles.push(angle1);
       var v3 = vecs[0].subtract(vecs[1]);
       var v4 = vecs[2].subtract(vecs[1]);
-      sides.push(v3.length()+", "+v4.length());
+      sides.push((v3.length()/100).toFixed(2)+" & "+(v4.length()/100).toFixed(2));
       var angle2 = toDegrees( Math.acos( v3.dot(v4)/(v3.length()*v4.length()) ) );
       angles.push(angle2);
       var v5 = vecs[0].subtract(vecs[2]);
       var v6 = vecs[1].subtract(vecs[2]);
-      sides.push(v5.length()+", "+v6.length());
+      sides.push((v5.length()/100).toFixed(2)+" & "+(v6.length()/100).toFixed(2));
       var angle3 = toDegrees( Math.acos( v5.dot(v6)/(v5.length()*v6.length()) ) );
       angles.push(angle3);
     } else if (vecs.length === 4) {
       var v1 = vecs[1].subtract(vecs[0]);
       var v2 = vecs[3].subtract(vecs[0]);
-      sides.push(v1.length()+", "+v2.length());
+      sides.push((v1.length()/100).toFixed(2)+" & "+(v2.length()/100).toFixed(2));
       var angle1 = toDegrees( Math.acos( v1.dot(v2)/(v1.length()*v2.length()) ) );
       angles.push(angle1);
       var v3 = vecs[0].subtract(vecs[1]);
       var v4 = vecs[2].subtract(vecs[1]);
-      sides.push(v3.length()+", "+v4.length());
+      sides.push((v3.length()/100).toFixed(2)+" & "+(v4.length()/100).toFixed(2));
       var angle2 = toDegrees( Math.acos( v3.dot(v4)/(v3.length()*v4.length()) ) );
       angles.push(angle2);
       var v5 = vecs[1].subtract(vecs[2]);
       var v6 = vecs[3].subtract(vecs[2]);
-      sides.push(v5.length()+", "+v6.length());
+      sides.push((v5.length()/100).toFixed(2)+" & "+(v6.length()/100).toFixed(2));
       var angle3 = toDegrees( Math.acos( v5.dot(v6)/(v5.length()*v6.length()) ) );
       angles.push(angle3);
       var v7 = vecs[0].subtract(vecs[3]);
       var v8 = vecs[2].subtract(vecs[3]);
-      sides.push(v7.length()+", "+v8.length());
+      sides.push((v7.length()/100).toFixed(2)+" & "+(v8.length()/100).toFixed(2));
       var angle4 = toDegrees( Math.acos( v7.dot(v8)/(v7.length()*v8.length()) ) );
       angles.push(angle4);
     }

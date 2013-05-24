@@ -85,7 +85,8 @@
 				</ul>
 				<label>Angles</label>
 				<ul class="circle two columns">
-					<li ng-repeat="angle in face.angles">{{angle[0].toFixed(1) | number}}&deg; <em>for {{angle[1]}}</em></li>
+					<!-- <li ng-repeat="angle in face.angles[0]">{{angle}}</li> -->
+					<li ng-repeat="angle in face.angles[0]">{{angle.toFixed(1) | number}}&deg; <em>for {{face.angles[1][$index]}}</em></li>
 				</ul>
 			</div>
 			<!-- END AREA -->
