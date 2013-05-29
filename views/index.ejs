@@ -14,7 +14,7 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="/css/styles.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,8 +22,8 @@
 
 	<!-- Favicons and app icons
 	================================================== -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 </head>
@@ -46,19 +46,13 @@
 		</div>
 		<!-- END NAVBAR -->
 
-		<!-- LEAD -->
-		<div class="sixteen columns small-bottom">
-			<p class="lead">Everything you’ve learned in school as "obvious" becomes less and less obvious as you begin to study the universe. For example, there are no solids in the universe. There’s not even a suggestion of a solid. There are no absolute continuums. There are no surfaces. There are no straight lines. - <em>Buckminster Fuller</em></p>
-		</div>
-		<!-- END LEAD -->
-
 		<!-- HERO -->
 		<div class="sixteen columns add-bottom" id="hero"> 
-			<ul>
-				<li class="colours"><img draggable="false" src="/img/colours.png"></li>
-				<li class="logo"><img draggable="false" src="/img/logo.png"></li>
-				<li class="drawing"><img draggable="false" src="/img/drawing.png"></li>
-			</ul>
+			<div class="swipe-wrap small-bottom">
+				<div class="slide"><img src="/img/colours.png"></div>
+				<div class="slide"><img src="/img/logo.png"></div>
+				<div class="slide"><img src="/img/drawing.png"></div>
+			</div>
 			<p>INSTALLATION | 254 metal hooks, 8 turnbuckles, silk &amp; thread | 12m x 10m x 8m | SOFTWARE | processing.js, node.js, mongodb &amp; heroku</p>
 		</div>
 		<!-- END HERO -->
@@ -66,7 +60,7 @@
 		<!-- ABOUT -->
 		<div id="about" class="sixteen columns add-bottom">
 			<h2>About</h2>
-			<p>Call Me They is my graduation project at the Interactive/Media/Design department at <a target="_blank" href="http://www.kabk.nl/">The Royal Academy of Art</a>, the Hague. The STB Series is an ongoing experiment with simulated airstreams that I produce through computer programs common in scientific practices, particularly those in connection with building analysis. The works in the series hold no constant appearance, matter, or material - I am trying to find methods to catch fragments of a virtual condition in permanent flux. The STB Series reflects my investigation into how science and media are trying to approach the creation of ‘reality’ through new technological methods of simulation. While these simulations are trying to imitate reality, I am imitating the imitation of reality with my hand - the hand drawing as an essential part of this work. For me it allows a physical acquisition of invisible digital calculations, and also includes mistakes and instinctive extensions. Until a drawing is finished it passes through several stations of analog and digital realms.</p>
+			<p>Call Me They is my graduation project at the Interactive/Media/Design department at <a target="_blank" href="http://www.kabk.nl/">The Royal Academy of Art</a>, the Hague. It is a response to my exploration of gender as a continuum rather than a binary. The installation allows for a myriad of possibilities from a simple set of imposed constraints. A room is covered in hooks and pieces of fabric are strung between them, creating an over-arching shape. The viewer may interact with the shape to alter and evolve it in an infinite number of ways.</p>
 		</div>
 		<!-- END ABOUT -->
 
@@ -74,15 +68,15 @@
 		<div class="one-third column add-bottom">
 			<h3>How It Works</h3>
 			<img class="one-third column" src="img/two.svg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante.</p>
+			<p>A room is covered in hooks and pieces of fabric are strung between them, creating an over-arching shape. The viewer may interact with the shape to alter and evolve it in an infinite number of ways.</p>
 		</div>
 		<div class="one-third column add-bottom">
 			<h3>The Shape-Builder</h3>
 			<img class="one-third column" src="img/three.svg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante.</p>
+			<p>I developed custom software in order to be able to design a shape specific to the exhibition space. The app allows users to build complex shapes using 3/4 sided polygons and outputs them as construction plans.</p>
 		</div>
 		<div class="one-third column add-bottom">
-			<h3>Theory &amp; Background</h3>
+			<h3>Specific Shapes</h3>
 			<img class="one-third column" src="img/one.svg">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac neque nulla, a ullamcorper mi. Vivamus ipsum metus, feugiat ac commodo eu, posuere nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor nulla dui, ac dignissim mi. Duis vel ante eu velit faucibus tristique sit amet a ante. <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
 		</div>
@@ -106,15 +100,23 @@
 <!-- Le Javascript
 ================================================== -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script src="libs/modernizr.min.js"></script>
-<script src="libs/hammer.js"></script>
-<script src="js/carousel.js"></script>
+<script src="/libs/modernizr.min.js"></script>
+<script src="/libs/swipe.js"></script>
 <script type="text/javascript">
   $(window).load(function() {
   	// Prevent dragging img
   	$('#hero img').on('dragstart', function(event) { 
   		event.preventDefault(); 
   	});
+  	var elem = document.getElementById('hero');
+		window.mySwipe = Swipe(elem, {
+		  startSlide: 0,
+		  speed: 600,
+		  auto: 4000,
+		  continuous: true,
+		  disableScroll: true,
+		  stopPropagation: true
+		});
   	// Slide to anchor links
 	  $('a').click(function() {
 	    var elementClicked = $(this).attr("href");
