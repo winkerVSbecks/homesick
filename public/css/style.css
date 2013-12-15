@@ -48,6 +48,9 @@ p.lead {
 /* HERO */
 #hero {
   overflow: hidden;
+  height: 100%;
+  display: block;
+	position: relative;
 }
 .swipe-wrap {
   overflow: hidden;
@@ -63,6 +66,36 @@ p.lead {
   border-radius: 6px;
 }
 
+#controls {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+#hero #controls .arrow {
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	color: #fff;
+	text-shadow:
+	 -1px -1px 6px #888,  
+	  1px -1px 6px #888,
+	  -1px 1px 6px #888,
+	  1px 1px 6px #888;
+	z-index: 200;
+	top: 324px;
+}
+#hero #controls .arrow:active {
+	margin-top: 2px;
+}
+.left {
+	left: 20px;
+	float: left;
+}
+.right {
+	right: 20px;
+	float: right;
+}
 
 /* THREE COLUMNS */
 img.one-third.column  {
@@ -88,6 +121,14 @@ img.one-third.column  {
 
 
 /* MEDIA QUERIES */
+
+@media all and (max-width: 959px) {
+
+	#hero #controls .arrow {
+		top: 252px;
+	}
+}
+
 @media all and (max-width: 767px) {
 	.navbar h1 {
 		display: block !important;
@@ -101,6 +142,12 @@ img.one-third.column  {
 		float: left;
 		text-align: left;
 	}
+
+	#hero #controls .arrow {
+		top: 129px;
+	}
+
+	
 
 	.navbar h1 a {
 		border-bottom: 0;
@@ -118,6 +165,10 @@ img.one-third.column  {
 	}
 	.version {
 		display: none;
+	}
+
+	#hero #controls .arrow {
+		top: 84px;
 	}
 }
 
